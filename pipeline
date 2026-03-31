@@ -1,0 +1,22 @@
+library(ULPwgs)
+
+ULPwgs::multisample_clonet_trento(
+  sample_sheet='configs/sample_sheet.tsv',
+  output_dir="results/clonet",
+  verbose=TRUE,
+  mode="batch"
+)
+
+
+nano r/tumor_content.R
+
+# Tumor content estimation
+
+# Beta = allelic balance
+# LA = B / (2 - B)
+# TC = 1 - LA
+
+
+git add .
+git commit -m "CLONET: CNV, SNV and tumor content analysis"
+git push -u origin clonet
