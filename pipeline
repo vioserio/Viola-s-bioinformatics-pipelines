@@ -1,0 +1,18 @@
+create folder:mkdir scripts docs
+create file: nano scripts/exec_preprocess.sh
+#!/bin/bash -l
+#$ -l h_rt=48:0:0
+#$ -l mem=5G
+#$ -l h_vmem=5G
+#$ -pe smp 8
+
+singularity run --app preProcess \
+/scratch/.../preProcess_latest.sif \
+-i /scratch/.../FASTQ \
+-o /scratch/.../BAM \
+-t /scratch/.../tmp \
+-n 8 -m 40000
+
+git add .
+git commit -m "ABEMUS: preprocessing pipeline (FASTQ to BAM)"
+git push -u origin abemus
