@@ -1,4 +1,4 @@
-# UCL-Myriad-HPC
+# Myriad-HPC
 This repository collects bioinformatics pipelines I have used and studied, with practical notes and reproducible commands.
 
 **Branch Structure**
