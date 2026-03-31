@@ -1,0 +1,25 @@
+nano r/strelka_calling.R
+library(ULPwgs)
+
+ULPwgs::call_variants_strelka(
+  sheet="configs/sample_sheet.tsv",
+  output_dir="Strelka",
+  threads=6,
+  ram=4,
+  verbose=TRUE,
+  mode="batch"
+)
+nano r/identity_check.R
+library(ULPwgs)
+
+ULPwgs::check_pcf_identity(
+  output_name="identity",
+  clonet_dir=".",
+  threads=6,
+  output_dir=".",
+  mode="batch"
+)
+
+git add .
+git commit -m "STRELKA: variant calling and identity check"
+git push -u origin strelka
