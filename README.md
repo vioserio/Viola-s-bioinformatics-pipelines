@@ -1,4 +1,4 @@
-# Viola-s-bioinformatics-pipelines
+# UCL-Myriad-HPC
 This repository collects bioinformatics pipelines I have used and studied, with practical notes and reproducible commands.
 
 **Branch Structure**
