@@ -1,6 +1,8 @@
 # Myriad-HPC
 This repository collects bioinformatics pipelines I have used and studied, with practical notes and reproducible commands.
-
+This workflow is based on the ULP-WGS pipeline:
+https://github.com/TearsWillFall/ULPwgs
+It was used during my PhD internship at UCL (Prof. G. Attard lab) for cfDNA analysis.
 **Branch Structure**
 
 Pipelines included:
